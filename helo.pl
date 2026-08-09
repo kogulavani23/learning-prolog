@@ -1,0 +1,1 @@
+?- write('Helo world'), nl.
