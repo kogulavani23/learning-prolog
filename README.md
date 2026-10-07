@@ -1,14 +1,13 @@
-# learning-prolog
-
+LEARNING-PROLOG 
 In this repository, a declarative logic programming project built using SWI-Prolog and gets executed.
 
-Features
+FEATURES:
  * Knowledge Base: Defines domain-specific facts and data structures.
  * Logical Inference: Implements rules for automated reasoning and query resolution.
  * Interactive CLI Execution: Runs seamlessly via the SWI-Prolog terminal interpreter.
  * Version Controlled: Tracked and managed using Git and GitHub.
    
-Prerequisites
+PREREQUISITES:
 Ensure the following tools are installed on your environment:
  * SWI-Prolog (v8.0 or higher) — Added to system PATH.
  * Git — For source control.
@@ -21,45 +20,31 @@ cd repository-name
  * Verify SWI-Prolog Installation:
    swipl --version
 
-Usage
-1. Launching the Program
-Navigate to the project directory and load your primary Prolog source file:
-swipl main.pl
-
-2. Executing Queries
-Once the Prolog prompt (?-) appears, enter your queries. Always end queries with a period (.).
-% Example Query
-?- rule_name(Input, Result).
-
-% Exit SWI-Prolog
-?- halt.
-
-Git Workflow Reference
-Standard Git commands used to stage, commit, and update the repository:
-# Check status of modified files
-git status
-
-# Stage specific source files
-git add file_name.pl
-
-# Commit staged changes with a descriptive message
-git commit -m "Add descriptive commit message here"
-
-# Push updates to the main remote branch
-git push origin main
-
-Repository Structure
-repository-name/
-│
-├── main.pl           # Core Prolog source code (facts & rules)
-├── README.md         # Project documentation
-└── .gitignore        # Specifies untracked files to ignore
 
 
-# How to Install in Windows 
+HOW TO INSTALL IN WINDOWS : 
 SWI-Prolog:
 Download the 64-bit Windows installer from swi-prolog.org.
 Run the setup wizard and ensure "Add swipl to the system PATH" is selected.
 Git & VS Code:
 Download and install Git from git-scm.com.
 Install Visual Studio Code and add the Prolog extension for syntax formatting.
+
+USAGE:
+1. Launching the Program
+Navigate to the project directory and load your primary Prolog source file:
+swipl main.pl
+2. Executing Queries
+Once the Prolog prompt (?-) appears, enter your queries. Always end queries with a period (.).
+% Example Query
+?- rule_name(Input, Result).
+% Exit SWI-Prolog
+?- halt.
+
+PROJECT OVERVIEW:
+A simple Prolog system to match lost items on campus with found items using attribute matching and nearby locations.
+
+Features
+Search & Claim: Search by Category, Color, and Location to get immediate claim details.
+Smart Location Matching: Finds items lost in nearby areas (e.g., lost in Cafeteria, turned in at Student Center).
+Live Database: Add new found items to the database at runtime.
